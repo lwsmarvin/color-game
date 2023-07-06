@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  padding: 10px;
+  background-image: url("../../images/background.jpg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+main > img {
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 10px;
+}
+main .histories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+main .histories .history {
+  background: white;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: orange;
+  font-weight: 700;
+  padding: 7px 5%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .histories .history__date {
+  font-style: italic;
+  flex: 0.8;
+  font-size: 0.8rem;
+  color: white;
+  text-transform: uppercase;
+}
+main .histories .history__balled, main .histories .history__bet {
+  display: flex;
+  gap: 5px;
+  flex: 0.5;
+}
+main .histories .history__balled > div, main .histories .history__bet > div {
+  width: 23px;
+  height: 23px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+main .histories .history__balled-blue, main .histories .history__bet-blue {
+  background: blue;
+}
+main .histories .history__balled-red, main .histories .history__bet-red {
+  background: red;
+}
+main .histories .history__balled-green, main .histories .history__bet-green {
+  background: green;
+}
+main .histories .history__balled-white, main .histories .history__bet-white {
+  background: white;
+}
+main .histories .history__balled-pink, main .histories .history__bet-pink {
+  background: pink;
+}
+main .histories .history__balled-yellow, main .histories .history__bet-yellow {
+  background: yellow;
+}
+main .histories .header {
+  background: transparent;
+  color: white;
+}
+main .histories .header .history__date {
+  font-style: normal;
+  font-size: 0.9rem;
+}

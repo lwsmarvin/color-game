@@ -1,0 +1,25 @@
+@mixin colored-boxes() {
+  &-blue {
+    background: blue;
+  }
+
+  &-red {
+    background: red;
+  }
+
+  &-green {
+    background: green;
+  }
+
+  &-white {
+    background: white;
+  }
+
+  &-pink {
+    background: pink;
+  }
+
+  &-yellow {
+    background: yellow;
+  }
+}
