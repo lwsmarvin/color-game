@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background: white;
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  padding: 10px;
+  background-image: url("../assets/images/background.jpg");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  max-width: 500px;
+  position: relative;
+}
+main .header {
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .header .backBtn {
+  background: red;
+  outline: none;
+  border: none;
+  position: absolute;
+  left: 0;
+  top: 30px;
+  border-radius: 0 50% 50% 0;
+  padding: 3px;
+  padding-left: 0;
+  cursor: pointer;
+}
+main .header .backBtn > div {
+  border: 2px solid rgba(255, 255, 255, 0.737);
+  padding: 10px;
+  border-radius: 0 50% 50% 0;
+  border-left: none;
+}
+main .header .backBtn > div > div {
+  width: 7px;
+  height: 7px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  transform: rotate(-45deg);
+}
+main .header .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .header .result img {
+  width: 200px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+main .header .result .jackpot {
+  border: 3px orange solid;
+  display: flex;
+  gap: 15px;
+  background-color: rgb(114, 33, 114);
+  padding: 3px;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+main .header .result .jackpot::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 25%;
+  width: 7px;
+  height: 50%;
+  background: orange;
+}
+main .header .result .jackpot::after {
+  content: "";
+  position: absolute;
+  right: -7px;
+  top: 25%;
+  width: 7px;
+  height: 50%;
+  background: orange;
+}
+main .header .result .jackpot__colors {
+  display: flex;
+  gap: 2px;
+}
+main .header .result .jackpot__colors div {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+}
+main .header .result .jackpot__colors-blue {
+  background: blue;
+}
+main .header .result .jackpot__colors-red {
+  background: red;
+}
+main .header .result .jackpot__colors-green {
+  background: green;
+}
+main .header .result .jackpot__colors-white {
+  background: white;
+}
+main .header .result .jackpot__colors-pink {
+  background: pink;
+}
+main .header .result .jackpot__colors-yellow {
+  background: yellow;
+}
+main .header .result .jackpot__amount {
+  color: orange;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+main .header .result .jackpot__amount .coin {
+  width: 15px;
+  height: 15px;
+  background: yellow;
+  border-radius: 30px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .header .result .jackpot__amount div:nth-child(2) {
+  padding: 0 5px 0 5px;
+}
+main .video {
+  width: 100%;
+  height: 300px;
+  background: black;
+  border-radius: 5px;
+}
+main .bet_points {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+main .bet_points > div {
+  display: flex;
+  border: 2px solid rgb(223, 112, 0);
+  background: rgb(107, 70, 0);
+  border-radius: 30px;
+}
+main .bet_points > div .coin {
+  width: 17px;
+  height: 17px;
+  background: orange;
+  border-radius: 30px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .bet_points > div .points {
+  padding: 0 15px;
+  color: orange;
+  font-size: 13px;
+}
+main .bet_points > div .add {
+  font-weight: 700;
+  color: orange;
+  margin-right: 7px;
+  font-size: 13px;
+  cursor: pointer;
+}
+main .bet {
+  background: rgb(176, 128, 39);
+  width: 100%;
+  flex: 1;
+  border-radius: 5px;
+  position: relative;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+main .bet .history {
+  background: rgb(149, 107, 28);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+main .bet .history__text {
+  font-weight: 700;
+  font-size: 10px;
+  color: white;
+}
+main .bet .history__colors {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+main .bet .history__colors div {
+  width: 30px;
+  height: 30px;
+  border: 2px solid rgb(210, 210, 210);
+}
+main .bet .history__colors-blue {
+  background: blue;
+}
+main .bet .history__colors-red {
+  background: red;
+}
+main .bet .history__colors-green {
+  background: green;
+}
+main .bet .history__colors-white {
+  background: white;
+}
+main .bet .history__colors-pink {
+  background: pink;
+}
+main .bet .history__colors-yellow {
+  background: yellow;
+}
+main .bet .history__reset {
+  width: 30px;
+  height: 30px;
+  padding: 2px;
+  background: rgb(33, 192, 176);
+  border-radius: 50px;
+  box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.452);
+  cursor: pointer;
+}
+main .bet .history__reset img {
+  width: 100%;
+  height: 100%;
+}
+main .bet .bets {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .bet .bets__amount {
+  display: flex;
+  gap: 5px;
+  background: rgb(149, 107, 28);
+  padding: 5px;
+  border-radius: 5px;
+}
+main .bet .bets__amount div {
+  flex: 1;
+  padding: 10px;
+  background: rgb(203, 145, 39);
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+}
+main .bet .bets__amount div.active {
+  background: transparent;
+}
+main .bet .bets__colors {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 15px;
+  background: rgb(149, 107, 28);
+  gap: 15px;
+  border-radius: 5px;
+}
+main .bet .bets__colors > div {
+  display: flex;
+  flex: 1;
+  gap: 15px;
+}
+main .bet .bets__colors > div div {
+  border: 3px solid orange;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  position: relative;
+  transform: rotate(-5deg);
+  cursor: pointer;
+  border-radius: 5px;
+}
+main .bet .bets__colors > div div::before {
+  content: "";
+  width: 20%;
+  height: 10px;
+  background: orange;
+  position: absolute;
+  top: -7px;
+}
+main .bet .bets__colors-blue {
+  background: rgb(0, 136, 255);
+}
+main .bet .bets__colors-red {
+  background: rgb(253, 19, 19);
+}
+main .bet .bets__colors-green {
+  background: rgb(0, 164, 0);
+}
+main .bet .bets__colors-white {
+  background: white;
+}
+main .bet .bets__colors-pink {
+  background: rgb(255, 0, 179);
+}
+main .bet .bets__colors-yellow {
+  background: yellow;
+}/*# sourceMappingURL=global.css.map */
