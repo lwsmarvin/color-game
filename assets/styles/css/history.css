@@ -90,4 +90,5 @@ main .histories .header {
 main .histories .header .history__date {
   font-style: normal;
   font-size: 0.9rem;
+  text-transform: none;
 }

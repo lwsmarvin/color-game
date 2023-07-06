@@ -82,15 +82,8 @@ main {
       .history__date {
         font-style: normal;
         font-size: 0.9rem;
+        text-transform: none;
       }
     }
   }
-
-  //   .colors {
-  //     width: 200px;
-  //     height: 200px;
-  //     background: red;
-
-  //     @include colors.colored-boxes;
-  //   }
 }
