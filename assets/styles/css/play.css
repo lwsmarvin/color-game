@@ -142,7 +142,8 @@ main .header .result .jackpot__amount div:nth-child(2) {
 }
 main .video {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
+  flex: 2;
   background: black;
   border-radius: 5px;
 }
