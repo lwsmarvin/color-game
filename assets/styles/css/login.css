@@ -23,7 +23,7 @@ main {
   max-width: 500px;
   position: relative;
   justify-content: center;
-  background: linear-gradient(rgb(1, 4, 66), rgb(4, 12, 164));
+  background: linear-gradient(rgb(1, 3, 53), rgb(3, 8, 100));
   background-blend-mode: multiply;
   gap: 20px;
   color: white;
