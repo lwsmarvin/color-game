@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
     <link rel="stylesheet" href="./assets/styles/css/dashboard.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   </head>
   <body>
     <main>
       <header>
         <div>
           <img alt="" src="/assets/images/laban-lang.png" />
+          LABAN LANG
         </div>
         <div>
           <img alt="" src="/assets/images/clover.png" />
@@ -23,11 +29,29 @@
       </header>
 
       <div class="content">
-        <div class="play">
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img src="/assets/images/play-now.png" alt="" />
+              <button>Play now!</button>
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/play-now.png" alt="" />
+            </div>
+            <div class="swiper-slide">
+              <img src="/assets/images/play-now.png" alt="" />
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+        <!-- <div class="play">
           <div>
             <button>Play now!</button>
           </div>
-        </div>
+        </div> -->
 
         <div class="games">
           <div class="title">Live Games</div>
@@ -82,4 +106,16 @@
       </menu>
     </main>
   </body>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      autoplay: true,
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
 </html>
